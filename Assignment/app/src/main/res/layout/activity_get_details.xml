@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.assignment.GetDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/det_toolbar"
+        android:background="@color/green"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/det_toolbar"
+        android:text="ID: "
+        android:gravity="center_vertical"
+        android:id="@+id/det_id"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:id="@+id/det_editID"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:layout_alignBottom="@+id/det_id"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/det_id"
+        android:text="Name: "
+        android:gravity="center_vertical"
+        android:id="@+id/det_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:id="@+id/det_editName"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:layout_alignBottom="@+id/det_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/det_name"
+        android:text="Phone No.: "
+        android:gravity="center_vertical"
+        android:id="@+id/det_phone"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:id="@+id/det_editphone"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/det_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/det_phone"
+        android:text="Entity: "
+        android:gravity="center_vertical"
+        android:id="@+id/det_entity"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:id="@+id/det_editEntity"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/det_entity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/det_entity"
+        android:text="Region of work: "
+        android:gravity="center_vertical"
+        android:id="@+id/det_work"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/det_reg"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_alignTop="@+id/det_work"
+        android:layout_alignEnd="@+id/det_editEntity"
+        android:layout_toEndOf="@+id/det_work" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/det_work"
+        android:src="@drawable/ic_action_label_green"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/imageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/det_work"
+        android:text="Available"
+        android:gravity="center_vertical"
+        android:id="@+id/det_available"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Available"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:id="@+id/det_button"
+        android:background="@color/green"
+        android:textColor="#FFF"
+        android:layout_below="@+id/det_available"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+</RelativeLayout>

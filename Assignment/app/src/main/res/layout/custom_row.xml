@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="148dp"
+    android:layout_margin="2dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    card_view:cardCornerRadius="6dp"
+    android:visibility="visible"
+    android:animateLayoutChanges="true"
+    >
+    <RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="1dp"
+            android:src="@drawable/ic_action_label_green" />
+
+
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/myImage" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Region"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_region"
+            android:layout_below="@+id/myName"
+            android:textColor="@color/chrome"
+            android:layout_toEndOf="@+id/myImage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Available"
+            android:id="@+id/text_available"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/myImage"
+            android:layout_below="@+id/text_region"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/green"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_image"
+            android:src="@drawable/ic_local_phone"
+            android:layout_below="@+id/myName"
+            android:layout_toStartOf="@+id/text_phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="phone"
+            android:textAlignment="textEnd"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/text_phone"
+            android:textColor="@color/chrome"
+            android:layout_alignTop="@+id/text_region"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_available"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="#e7e4e4" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_available"
+            android:layout_marginTop="2dp"
+            android:id="@+id/button"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:text="Not Available"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ID: "
+            android:id="@+id/user_id"
+            android:layout_alignTop="@+id/text_available"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
